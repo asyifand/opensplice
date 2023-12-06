@@ -1,0 +1,100 @@
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:57+0700
+Description : Thread deadlocked:  "OSPL Lease Renew Thread"(0x5a04):d:263->263
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : threadsWatchdog 18556
+Internals   : 6.9.210323OSS///threadsWatchdog/s_threadsMonitor.c/241/0/1701311697.588266200/-1
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:57+0700
+Description : Failed to update service state to 4.
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : spliced 24408
+Internals   : 6.9.210323OSS///OpenSplice domain service/spliced.c/1392/0/1701311697.590106500/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:57+0700
+Description : Splice-daemon failed to renew its lease within the configured lease expiry-time (10.000000000). The lease renewal took 70.863668900 s.
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : OSPL Lease Renew Thread 23044
+Internals   : 6.9.210323OSS///OpenSplice domain service/spliced.c/171/0/1701311697.590927000/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:57+0700
+Description : Unknown service 'splicedaemon' died
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : ServiceManager 13760
+Internals   : 6.9.210323OSS///OpenSplice domain service/serviceMonitor.c/71/0/1701311697.594804500/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:57+0700
+Description : Unknown service 'splicedaemon' died
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : ServiceManager 13760
+Internals   : 6.9.210323OSS///OpenSplice domain service/serviceMonitor.c/71/0/1701311697.595332300/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:57+0700
+Description : Unknown service 'splicedaemon' died
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : ServiceManager 13760
+Internals   : 6.9.210323OSS///OpenSplice domain service/serviceMonitor.c/71/0/1701311697.605264300/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:34:59+0700
+Description : Unknown service 'splicedaemon' died
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : ServiceManager 13760
+Internals   : 6.9.210323OSS///OpenSplice domain service/serviceMonitor.c/71/0/1701311699.901856900/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:35:07+0700
+Description : Unknown service 'splicedaemon' died
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : ServiceManager 13760
+Internals   : 6.9.210323OSS///OpenSplice domain service/serviceMonitor.c/71/0/1701311707.590178300/0
+========================================================================================
+Report      : ERROR
+Date        : 2023-11-30T09:35:08+0700
+Description : Thread deadlocked:  "ospl_spliced"(0x5f58):d:18->18
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : threadsWatchdog 18556
+Internals   : 6.9.210323OSS///threadsWatchdog/s_threadsMonitor.c/241/0/1701311708.678527200/-1
+========================================================================================
+Report      : FATAL
+Date        : 2023-11-30T09:35:08+0700
+Description : The spliced main thread found not-responding. A clean shutdown is highly unlikely. Best action left: abort!
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20924>
+Thread      : threadsWatchdog 18556
+Internals   : 6.9.210323OSS///threadsWatchdog/s_threadsMonitor.c/259/0/1701311708.679131900/-1
+========================================================================================
+Context     : org.opensplice.dds.dcps.DomainParticipantImpl.delete_subscriber
+Date        : 2023-12-06T19:16:47+0700
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20220>
+Thread      : 27124
+Internals   : DomainParticipantImpl.java/391/6.9.210323OSS///0
+----------------------------------------------------------------------------------------
+Report      : Precondition not met: Subscriber still contains '1' DataReader entities.
+Internals   : org.opensplice.dds.dcps.SubscriberImpl.deinit/SubscriberImpl.java/103/4/1701865007.527673300
+========================================================================================
+Context     : org.opensplice.dds.dcps.DomainParticipantImpl.delete_topic
+Date        : 2023-12-06T19:16:47+0700
+Node        : LAPTOP-H305IS9D
+Process     : java.exe <20220>
+Thread      : 27124
+Internals   : DomainParticipantImpl.java/635/6.9.210323OSS///0
+----------------------------------------------------------------------------------------
+Report      : Precondition not met: Topic 'HelloWorldData_Msg' still referenced 1 times.
+Internals   : org.opensplice.dds.dcps.TopicImpl.deinit/TopicImpl.java/119/4/1701865007.528342000
